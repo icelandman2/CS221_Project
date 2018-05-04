@@ -2,7 +2,11 @@ import sys
 import collections
 import re
 
-diseaseMap = {'cancer' : ['cough', 'runny nose', 'heart pain'], 'heart attack' : ['chest pain', 'shortness of breath']}
+diseaseMap = {'Schistosomiasis' : ['rash', 'itching', 'fever', 'aching', 'chills', 'cough', 'diarrhea', 'gland enlargement'],
+              'Myocardial Infarction' : ['tightness', 'pressure', 'squeezing', 'chest pain', 'shortness of breath', 'radiating pain', 'sweating', 'nausea', 'vomiting', 'fainting'],
+              'Scabies' : ['itching', 'rash', 'crusting'], 'Syphilis' : ['genital lesions', 'sore throat', 'fever', 'weight loss', 'hair loss', 'headache'],
+              'Influenza' : ['fever', 'chills', 'cough', 'nasal congestion', 'runny nose', 'sneezing'],
+              'Dengue Fever' : ['fever', 'headache', 'vomiting', 'joint pain', 'rash']}
 
 def intro():
     print(" ")
@@ -38,10 +42,15 @@ def baseline(user_input):
             if symptom.lower() in listOfSymptoms:
                 disCounts[disease] += 1
     if len(disCounts) > 0:
-        prediction = max(disCounts)
+        max = 0
+        pred = ""
+        for dis in disCounts:
+            if disCounts[dis]>max:
+                max = disCounts[dis]
+                pred = dis
+        prediction = pred
     else:
-        prediction = 'cancer'
-
+        prediction = 'cancer (I don\'t know what you have)'
 
     ret = "It sounds like you have " + prediction
     return ret
