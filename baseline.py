@@ -2,11 +2,29 @@ import sys
 import collections
 import re
 
+'''
+Sentences pulled from the disease's wikipedia page that contain the word 'symptom'
+'''
+
+schistosomiasis = "Symptoms include abdominal pain, diarrhea, bloody stool, or blood in the urine.".split()
+myocardial_infarction = " Other symptoms may include shortness of breath, nausea, feeling faint, a cold sweat, or feeling tired.[1] About 30% of people have atypical symptoms.".split()
+scabies = "The most common symptoms are severe itchiness and a pimple-like rash".split()
+influenza = "The most common symptoms include: a high fever, runny nose, sore throat, muscle pains, headache, coughing, and feeling tired".split()
+dengue_fever = "Symptoms typically begin three to fourteen days after infection.".split()
+
+'''
 diseaseMap = {'Schistosomiasis' : ['rash', 'itching', 'fever', 'aching', 'chills', 'cough', 'diarrhea', 'gland enlargement'],
               'Myocardial Infarction' : ['tightness', 'pressure', 'squeezing', 'chest pain', 'shortness of breath', 'radiating pain', 'sweating', 'nausea', 'vomiting', 'fainting'],
               'Scabies' : ['itching', 'rash', 'crusting'], 'Syphilis' : ['genital lesions', 'sore throat', 'fever', 'weight loss', 'hair loss', 'headache'],
               'Influenza' : ['fever', 'chills', 'cough', 'nasal congestion', 'runny nose', 'sneezing'],
               'Dengue Fever' : ['fever', 'headache', 'vomiting', 'joint pain', 'rash']}
+'''
+
+diseaseMap = {'Schistosomiasis' : schistosomiasis,
+              'Myocardial Infarction' : myocardial_infarction,
+              'Scabies' : scabies,
+              'Influenza' : influenza,
+              'Dengue Fever' : dengue_fever}
 
 def intro():
     print(" ")
@@ -22,7 +40,7 @@ def intro():
 def wantToQuit():
     print(" ")
     print("Do you want to ask about another condition?")
-    decision = raw_input("Say yes if you want to, or press another key if you want to quit: ")
+    decision = input("Say yes if you want to, or press another key if you want to quit: ")
     decision.strip(' ')
     match = re.findall('^[Yy][Ee][Ss]', decision)
     print(" ")
@@ -50,7 +68,7 @@ def baseline(user_input):
                 pred = dis
         prediction = pred
     else:
-        prediction = 'cancer (I don\'t know what you have)'
+        prediction = 'unknown'
 
     ret = "It sounds like you have " + prediction
     return ret
@@ -58,7 +76,7 @@ def baseline(user_input):
 sympt = ""
 intro()
 while(True):
-    sympt = raw_input("What are your symptoms? ")
+    sympt = input("What are your symptoms? ")
     sympt = sympt.split(',')
     sympt = [x.strip(' ') for x in sympt]
     print(" ")
