@@ -12,19 +12,20 @@ scabies = "The most common symptoms are severe itchiness and a pimple-like rash"
 influenza = "The most common symptoms include: a high fever, runny nose, sore throat, muscle pains, headache, coughing, and feeling tired".split()
 dengue_fever = "Symptoms typically begin three to fourteen days after infection.".split()
 
-'''
+
 diseaseMap = {'Schistosomiasis' : ['rash', 'itching', 'fever', 'aching', 'chills', 'cough', 'diarrhea', 'gland enlargement'],
               'Myocardial Infarction' : ['tightness', 'pressure', 'squeezing', 'chest pain', 'shortness of breath', 'radiating pain', 'sweating', 'nausea', 'vomiting', 'fainting'],
-              'Scabies' : ['itching', 'rash', 'crusting'], 'Syphilis' : ['genital lesions', 'sore throat', 'fever', 'weight loss', 'hair loss', 'headache'],
+              'Scabies' : ['itching', 'rash', 'crusting'],
               'Influenza' : ['fever', 'chills', 'cough', 'nasal congestion', 'runny nose', 'sneezing'],
               'Dengue Fever' : ['fever', 'headache', 'vomiting', 'joint pain', 'rash']}
-'''
 
-diseaseMap = {'Schistosomiasis' : schistosomiasis,
+
+symptomMap = {'Schistosomiasis' : schistosomiasis,
               'Myocardial Infarction' : myocardial_infarction,
               'Scabies' : scabies,
               'Influenza' : influenza,
               'Dengue Fever' : dengue_fever}
+
 
 def intro():
     print(" ")
@@ -70,8 +71,21 @@ def baseline(user_input):
     else:
         prediction = 'unknown'
 
-    ret = "It sounds like you have " + prediction
-    return ret
+    return prediction
+
+def info_from_prediction(prediction):
+    if prediction is not 'unknown':
+        outVal = "It sounds like you have " + prediction
+        '''
+        words_of_wisdom = symptomMap[prediction]
+        will later print using this info as well
+        '''
+        print(outVal)
+        words_of_wisdom = symptomMap[prediction]
+        sent = " ".join(words_of_wisdom)
+        print(sent)
+    else:
+        print("I'm not sure what you have...")
 
 sympt = ""
 intro()
@@ -80,6 +94,6 @@ while(True):
     sympt = sympt.split(',')
     sympt = [x.strip(' ') for x in sympt]
     print(" ")
-    print(baseline(sympt))
+    info_from_prediction(baseline(sympt))
     if wantToQuit():
         break
