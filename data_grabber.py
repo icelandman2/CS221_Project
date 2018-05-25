@@ -6,7 +6,11 @@ import os
 
 diseases = ['Anthrax', 'Chickenpox', 'Cholera', 'Schistosomiasis',
 			'Myocardial Infarction', 'Scabies', 'Influenza', 'Dengue Fever',
-			'Mumps virus', 'Rabies']
+			'Mumps virus', 'Rabies', 'Zygomycosis', 'Zika virus'
+			'Tuberculosis', 'Syphilis', 'West Nile Fever', 'Sepsis',
+			'Rotavirus', 'Q fever', 'Paragonimiasis', 'Measles', 'Kuru',
+			'Human metapneumovirus', 'Hand, foot and mouth disease',
+			'Gonorrhea']
 
 rawParses = {}
 
