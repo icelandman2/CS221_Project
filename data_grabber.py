@@ -16,7 +16,8 @@ diseases = ['anthrax', 'chickenpox', 'cholera', 'schistosomiasis',
 			'cat scratch disease', 'cervicitis', 'chancroid', 'chlamydia',
 			'lymphogranuloma venereum', 'clostridial infection', 'dysentery',
 			'shigellosis', 'epididymitis', 'glanders', 'leprosy', 'leptospirosis',
-			'listeriosis', 'yme disease']
+			'listeriosis', 'lyme disease', 'in Nombre virus', 'heartland virus',
+			'Cryptococcosis']
 
 def getText():
 	diseasesToCheck = ['_'.join(st.split(' ')) for st in diseases]
