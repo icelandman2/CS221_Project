@@ -27,8 +27,6 @@ symptomMap = {'Schistosomiasis' : schistosomiasis,
               'Influenza' : influenza,
               'Dengue Fever' : dengue_fever}
 
-rawParses = {}
-
 def intro():
     print(" ")
     print("Hello! My name is Dr. Gogol! I am an automated search assistant.")
@@ -40,13 +38,6 @@ def intro():
     print("With that in mind, let's go!")
     print(" ")
 
-def getText():
-    diseasesToCheck = ['_'.join(st.split(' ')) for st in diseaseMap.keys()]
-    for dis in diseasesToCheck:
-        url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&titles=" + dis + "&redirects="
-        contents = urllib.request.urlopen(url).read()
-        rawParses[' '.join(dis.split('_'))] = contents
-    print(len(rawParses))
 
 def wantToQuit():
     print(" ")
@@ -99,7 +90,6 @@ def info_from_prediction(prediction):
 
 sympt = ""
 intro()
-getText()
 while(True):
     sympt = input("What are your symptoms? ")
     sympt = sympt.split(',')
