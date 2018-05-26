@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "yme_disease", "to": "Yme disease"}], "pages": {"-1": {"ns": 0, "title": "Yme disease", "missing": ""}}}, "limits": {"extracts": 20}}
