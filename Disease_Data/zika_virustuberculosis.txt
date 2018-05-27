@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "zika_virustuberculosis", "to": "Zika virustuberculosis"}], "pages": {"-1": {"ns": 0, "title": "Zika virustuberculosis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"query": {"pages": {"-1": {"title": "Zika virustuberculosis", "missing": "", "ns": 0}}, "normalized": [{"to": "Zika virustuberculosis", "from": "zika_virustuberculosis"}]}, "batchcomplete": "", "limits": {"extracts": 20}}
