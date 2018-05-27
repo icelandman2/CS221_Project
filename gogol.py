@@ -3,6 +3,8 @@ import collections
 import re
 import urllib.request
 import os
+import difflib
+
 '''
 Sentences pulled from the disease's wikipedia page that contain the word 'symptom'
 '''
@@ -44,6 +46,7 @@ def intro():
 
 def pull_relations():
     for filename in os.listdir('Disease_Data/'):
+        #print(filename)
         diseaseName = " ".join(filename[:-4].split("_"))
         filepath = "Disease_Data/" + filename
         f = open(filepath, "r")
@@ -87,8 +90,17 @@ def hand_built(user_input):
         listOfSymptoms = symptsOfMapped[disease]
         listOfSymptoms = [x.lower() for x in listOfSymptoms]
         for symptom in user_input:
-            if symptom.lower() in listOfSymptoms:
-                disCounts[disease] += 1
+            for goldS in listOfSymptoms:
+                matchlib = difflib.SequenceMatcher(None, symptom.lower(), goldS.lower())
+                isMatch = matchlib.find_longest_match(0,len(symptom),0,len(goldS))
+                if isMatch is not None:
+                    #print(isMatch.size)
+                    if float(isMatch.size) >= .75*float(len(symptom)):
+                        matchPortion = float(isMatch.size) / float(len(symptom))
+                        disCounts[disease] += matchPortion
+                        break
+                        #TOOD: Alter to get BEST match, rather than first threshold match
+    #print(disCounts)
     if len(disCounts) > 0:
         max = 0
         pred = ""

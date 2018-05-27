@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "clostridial_infection", "to": "Clostridial infection"}], "pages": {"-1": {"ns": 0, "title": "Clostridial infection", "missing": ""}}}, "limits": {"extracts": 20}}
+{"query": {"pages": {"-1": {"title": "Clostridial infection", "missing": "", "ns": 0}}, "normalized": [{"to": "Clostridial infection", "from": "clostridial_infection"}]}, "batchcomplete": "", "limits": {"extracts": 20}}
