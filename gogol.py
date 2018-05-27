@@ -81,6 +81,27 @@ def wantToQuit():
     return True
     #return True
 
+def hand_built(user_input):
+    disCounts = collections.defaultdict(int)
+    for disease in symptsOfMapped:
+        listOfSymptoms = symptsOfMapped[disease]
+        listOfSymptoms = [x.lower() for x in listOfSymptoms]
+        for symptom in user_input:
+            if symptom.lower() in listOfSymptoms:
+                disCounts[disease] += 1
+    if len(disCounts) > 0:
+        max = 0
+        pred = ""
+        for dis in disCounts:
+            if disCounts[dis] > max:
+                max = disCounts[dis]
+                pred = dis
+        prediction = pred
+    else:
+        prediction = 'unknown'
+
+    return prediction
+
 def baseline(user_input):
     disCounts = collections.defaultdict(int)
     for disease in diseaseMap:
@@ -110,9 +131,9 @@ def info_from_prediction(prediction):
         will later print using this info as well
         '''
         print(outVal)
-        words_of_wisdom = symptomMap[prediction]
-        sent = " ".join(words_of_wisdom)
-        print(sent)
+        #words_of_wisdom = symptomMap[prediction]
+        #sent = " ".join(words_of_wisdom)
+        #print(sent)
     else:
         print("I'm not sure what you have...")
 
@@ -123,7 +144,9 @@ while(True):
     sympt = input("What are your symptoms? ")
     sympt = sympt.split(',')
     sympt = [x.strip(' ') for x in sympt]
-    print(" ")
+    print("Here is the baseline prediction:")
     info_from_prediction(baseline(sympt))
+    print("Here is the hand-built prediction, without TF-IDF:")
+    info_from_prediction(hand_built(sympt))
     if wantToQuit():
         break
