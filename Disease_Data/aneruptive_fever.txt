@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "aneruptive_fever", "to": "Aneruptive fever"}], "pages": {"-1": {"ns": 0, "title": "Aneruptive fever", "missing": ""}}}, "limits": {"extracts": 20}}

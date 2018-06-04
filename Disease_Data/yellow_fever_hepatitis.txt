@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "yellow_fever_hepatitis", "to": "Yellow fever hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Yellow fever hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pneumonic_tularemia", "to": "Pneumonic tularemia"}], "pages": {"-1": {"ns": 0, "title": "Pneumonic tularemia", "missing": ""}}}, "limits": {"extracts": 20}}

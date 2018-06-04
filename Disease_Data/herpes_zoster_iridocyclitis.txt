@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_zoster_iridocyclitis", "to": "Herpes zoster iridocyclitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes zoster iridocyclitis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "typhoidal_tularemia", "to": "Typhoidal tularemia"}], "pages": {"-1": {"ns": 0, "title": "Typhoidal tularemia", "missing": ""}}}, "limits": {"extracts": 20}}

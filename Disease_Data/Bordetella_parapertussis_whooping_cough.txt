@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Bordetella_parapertussis_whooping_cough", "to": "Bordetella parapertussis whooping cough"}], "pages": {"-1": {"ns": 0, "title": "Bordetella parapertussis whooping cough", "missing": ""}}}, "limits": {"extracts": 20}}

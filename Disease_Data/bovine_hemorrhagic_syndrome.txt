@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "bovine_hemorrhagic_syndrome", "to": "Bovine hemorrhagic syndrome"}], "pages": {"-1": {"ns": 0, "title": "Bovine hemorrhagic syndrome", "missing": ""}}}, "limits": {"extracts": 20}}

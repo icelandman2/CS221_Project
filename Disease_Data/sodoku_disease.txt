@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "sodoku_disease", "to": "Sodoku disease"}], "pages": {"-1": {"ns": 0, "title": "Sodoku disease", "missing": ""}}}, "limits": {"extracts": 20}}

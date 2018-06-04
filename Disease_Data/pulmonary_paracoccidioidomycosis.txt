@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pulmonary_paracoccidioidomycosis", "to": "Pulmonary paracoccidioidomycosis"}], "pages": {"-1": {"ns": 0, "title": "Pulmonary paracoccidioidomycosis", "missing": ""}}}, "limits": {"extracts": 20}}

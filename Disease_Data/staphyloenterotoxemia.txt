@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "staphyloenterotoxemia", "to": "Staphyloenterotoxemia"}], "pages": {"-1": {"ns": 0, "title": "Staphyloenterotoxemia", "missing": ""}}}, "limits": {"extracts": 20}}

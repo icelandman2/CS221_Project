@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "trivittatus_encephalitis", "to": "Trivittatus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Trivittatus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

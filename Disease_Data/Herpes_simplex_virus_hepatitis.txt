@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_hepatitis", "to": "Herpes simplex virus hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}

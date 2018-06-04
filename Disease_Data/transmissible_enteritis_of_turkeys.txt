@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "transmissible_enteritis_of_turkeys", "to": "Transmissible enteritis of turkeys"}], "pages": {"-1": {"ns": 0, "title": "Transmissible enteritis of turkeys", "missing": ""}}}, "limits": {"extracts": 20}}

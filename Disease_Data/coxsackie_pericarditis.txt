@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "coxsackie_pericarditis", "to": "Coxsackie pericarditis"}], "pages": {"-1": {"ns": 0, "title": "Coxsackie pericarditis", "missing": ""}}}, "limits": {"extracts": 20}}

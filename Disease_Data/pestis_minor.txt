@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pestis_minor", "to": "Pestis minor"}], "pages": {"-1": {"ns": 0, "title": "Pestis minor", "missing": ""}}}, "limits": {"extracts": 20}}

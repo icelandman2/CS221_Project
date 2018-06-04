@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "oropharyngeal_anthrax", "to": "Oropharyngeal anthrax"}], "pages": {"-1": {"ns": 0, "title": "Oropharyngeal anthrax", "missing": ""}}}, "limits": {"extracts": 20}}

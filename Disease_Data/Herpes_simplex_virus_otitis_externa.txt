@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_otitis_externa", "to": "Herpes simplex virus otitis externa"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus otitis externa", "missing": ""}}}, "limits": {"extracts": 20}}

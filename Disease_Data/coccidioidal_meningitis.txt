@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "coccidioidal_meningitis", "to": "Coccidioidal meningitis"}], "pages": {"-1": {"ns": 0, "title": "Coccidioidal meningitis", "missing": ""}}}, "limits": {"extracts": 20}}

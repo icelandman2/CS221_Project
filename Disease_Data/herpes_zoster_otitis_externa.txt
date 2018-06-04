@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_zoster_otitis_externa", "to": "Herpes zoster otitis externa"}], "pages": {"-1": {"ns": 0, "title": "Herpes zoster otitis externa", "missing": ""}}}, "limits": {"extracts": 20}}

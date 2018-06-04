@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Rubella_virus_arthritis", "to": "Rubella virus arthritis"}], "pages": {"-1": {"ns": 0, "title": "Rubella virus arthritis", "missing": ""}}}, "limits": {"extracts": 20}}

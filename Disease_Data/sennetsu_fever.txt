@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "sennetsu_fever", "to": "Sennetsu fever"}], "pages": {"-1": {"ns": 0, "title": "Sennetsu fever", "missing": ""}}}, "limits": {"extracts": 20}}

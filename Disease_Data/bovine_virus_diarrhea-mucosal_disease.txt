@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "bovine_virus_diarrhea-mucosal_disease", "to": "Bovine virus diarrhea-mucosal disease"}], "pages": {"-1": {"ns": 0, "title": "Bovine virus diarrhea-mucosal disease", "missing": ""}}}, "limits": {"extracts": 20}}

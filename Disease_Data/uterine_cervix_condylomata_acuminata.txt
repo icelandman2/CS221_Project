@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "uterine_cervix_condylomata_acuminata", "to": "Uterine cervix condylomata acuminata"}], "pages": {"-1": {"ns": 0, "title": "Uterine cervix condylomata acuminata", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pulmonary_mucormycosis", "to": "Pulmonary mucormycosis"}], "pages": {"-1": {"ns": 0, "title": "Pulmonary mucormycosis", "missing": ""}}}, "limits": {"extracts": 20}}

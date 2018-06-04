@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "histoplasmosis_pneumonia", "to": "Histoplasmosis pneumonia"}], "pages": {"-1": {"ns": 0, "title": "Histoplasmosis pneumonia", "missing": ""}}}, "limits": {"extracts": 20}}

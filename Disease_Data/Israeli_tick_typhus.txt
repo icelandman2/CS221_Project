@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Israeli_tick_typhus", "to": "Israeli tick typhus"}], "pages": {"-1": {"ns": 0, "title": "Israeli tick typhus", "missing": ""}}}, "limits": {"extracts": 20}}

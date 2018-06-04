@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_zoster_keratoconjunctivitis", "to": "Herpes zoster keratoconjunctivitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes zoster keratoconjunctivitis", "missing": ""}}}, "limits": {"extracts": 20}}

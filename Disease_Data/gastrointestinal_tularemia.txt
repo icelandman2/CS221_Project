@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "gastrointestinal_tularemia", "to": "Gastrointestinal tularemia"}], "pages": {"-1": {"ns": 0, "title": "Gastrointestinal tularemia", "missing": ""}}}, "limits": {"extracts": 20}}

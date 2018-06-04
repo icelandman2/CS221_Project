@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "meningovascular_neurosyphilis", "to": "Meningovascular neurosyphilis"}], "pages": {"-1": {"ns": 0, "title": "Meningovascular neurosyphilis", "missing": ""}}}, "limits": {"extracts": 20}}

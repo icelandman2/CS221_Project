@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pulmonary_blastomycosis", "to": "Pulmonary blastomycosis"}], "pages": {"-1": {"ns": 0, "title": "Pulmonary blastomycosis", "missing": ""}}}, "limits": {"extracts": 20}}

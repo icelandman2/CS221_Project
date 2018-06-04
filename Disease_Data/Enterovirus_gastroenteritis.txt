@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Enterovirus_gastroenteritis", "to": "Enterovirus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Enterovirus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}

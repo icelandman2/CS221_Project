@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "coxsackievirus_infectious_disease", "to": "Coxsackievirus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Coxsackievirus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

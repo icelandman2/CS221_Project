@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "adenovirus_meningitis", "to": "Adenovirus meningitis"}], "pages": {"-1": {"ns": 0, "title": "Adenovirus meningitis", "missing": ""}}}, "limits": {"extracts": 20}}

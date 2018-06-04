@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Histoplasma_duboisii_meningitis", "to": "Histoplasma duboisii meningitis"}], "pages": {"-1": {"ns": 0, "title": "Histoplasma duboisii meningitis", "missing": ""}}}, "limits": {"extracts": 20}}

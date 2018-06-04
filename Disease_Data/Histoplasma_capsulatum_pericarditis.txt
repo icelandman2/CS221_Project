@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Histoplasma_capsulatum_pericarditis", "to": "Histoplasma capsulatum pericarditis"}], "pages": {"-1": {"ns": 0, "title": "Histoplasma capsulatum pericarditis", "missing": ""}}}, "limits": {"extracts": 20}}

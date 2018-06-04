@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "tick-borne_relapsing_fever", "to": "Tick-borne relapsing fever"}], "pages": {"-1": {"ns": 0, "title": "Tick-borne relapsing fever", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "coxsackie_myocarditis", "to": "Coxsackie myocarditis"}], "pages": {"-1": {"ns": 0, "title": "Coxsackie myocarditis", "missing": ""}}}, "limits": {"extracts": 20}}

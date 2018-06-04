@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Hantavirus_infectious_disease", "to": "Hantavirus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Hantavirus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

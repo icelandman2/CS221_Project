@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "esophageal_tuberculosis", "to": "Esophageal tuberculosis"}], "pages": {"-1": {"ns": 0, "title": "Esophageal tuberculosis", "missing": ""}}}, "limits": {"extracts": 20}}

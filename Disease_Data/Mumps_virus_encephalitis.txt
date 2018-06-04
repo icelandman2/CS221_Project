@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Mumps_virus_encephalitis", "to": "Mumps virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Mumps virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

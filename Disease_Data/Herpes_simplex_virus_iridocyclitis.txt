@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_iridocyclitis", "to": "Herpes simplex virus iridocyclitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus iridocyclitis", "missing": ""}}}, "limits": {"extracts": 20}}

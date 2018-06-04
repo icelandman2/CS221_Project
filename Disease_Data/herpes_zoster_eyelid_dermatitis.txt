@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_zoster_eyelid_dermatitis", "to": "Herpes zoster eyelid dermatitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes zoster eyelid dermatitis", "missing": ""}}}, "limits": {"extracts": 20}}

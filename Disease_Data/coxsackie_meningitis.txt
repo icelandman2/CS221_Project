@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "coxsackie_meningitis", "to": "Coxsackie meningitis"}], "pages": {"-1": {"ns": 0, "title": "Coxsackie meningitis", "missing": ""}}}, "limits": {"extracts": 20}}

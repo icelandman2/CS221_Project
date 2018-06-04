@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "trichorhinophalangeal_syndrome_type_II", "to": "Trichorhinophalangeal syndrome type II"}], "pages": {"-1": {"ns": 0, "title": "Trichorhinophalangeal syndrome type II", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "snowshoe_hare_encephalitis", "to": "Snowshoe hare encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Snowshoe hare encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

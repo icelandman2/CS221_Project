@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "gastrointestinal_tuberculosis", "to": "Gastrointestinal tuberculosis"}], "pages": {"-1": {"ns": 0, "title": "Gastrointestinal tuberculosis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "astrovirus_gastroenteritis", "to": "Astrovirus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Astrovirus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}

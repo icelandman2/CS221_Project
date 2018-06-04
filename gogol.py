@@ -67,7 +67,7 @@ def pull_relations():
                 if len(symptsForMap)>0:
                     symptsOfMapped[diseaseName] = symptsForMap
 
-    #print(symptsOfMapped)
+    print(symptsOfMapped)
         #print(payload)
 
 def wantToQuit():

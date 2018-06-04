@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pulmonary_sporotrichosis", "to": "Pulmonary sporotrichosis"}], "pages": {"-1": {"ns": 0, "title": "Pulmonary sporotrichosis", "missing": ""}}}, "limits": {"extracts": 20}}

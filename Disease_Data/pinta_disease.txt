@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "pinta_disease", "to": "Pinta disease"}], "pages": {"-1": {"ns": 0, "title": "Pinta disease", "missing": ""}}}, "limits": {"extracts": 20}}

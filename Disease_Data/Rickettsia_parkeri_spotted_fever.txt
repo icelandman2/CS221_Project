@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Rickettsia_parkeri_spotted_fever", "to": "Rickettsia parkeri spotted fever"}], "pages": {"-1": {"ns": 0, "title": "Rickettsia parkeri spotted fever", "missing": ""}}}, "limits": {"extracts": 20}}

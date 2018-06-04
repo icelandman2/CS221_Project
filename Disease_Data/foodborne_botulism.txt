@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "foodborne_botulism", "to": "Foodborne botulism"}], "pages": {"-1": {"ns": 0, "title": "Foodborne botulism", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Rubella_virus_encephalitis", "to": "Rubella virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Rubella virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

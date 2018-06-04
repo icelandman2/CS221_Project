@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "bacterial_gastritis", "to": "Bacterial gastritis"}], "pages": {"-1": {"ns": 0, "title": "Bacterial gastritis", "missing": ""}}}, "limits": {"extracts": 20}}

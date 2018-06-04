@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "anogenital_venereal_wart", "to": "Anogenital venereal wart"}], "pages": {"-1": {"ns": 0, "title": "Anogenital venereal wart", "missing": ""}}}, "limits": {"extracts": 20}}

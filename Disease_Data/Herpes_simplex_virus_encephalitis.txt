@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_encephalitis", "to": "Herpes simplex virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

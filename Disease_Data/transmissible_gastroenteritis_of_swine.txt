@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "transmissible_gastroenteritis_of_swine", "to": "Transmissible gastroenteritis of swine"}], "pages": {"-1": {"ns": 0, "title": "Transmissible gastroenteritis of swine", "missing": ""}}}, "limits": {"extracts": 20}}

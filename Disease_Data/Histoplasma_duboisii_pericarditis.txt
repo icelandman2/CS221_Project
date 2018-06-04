@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Histoplasma_duboisii_pericarditis", "to": "Histoplasma duboisii pericarditis"}], "pages": {"-1": {"ns": 0, "title": "Histoplasma duboisii pericarditis", "missing": ""}}}, "limits": {"extracts": 20}}

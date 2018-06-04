@@ -1,0 +1,1 @@
+{"batchcomplete": "", "query": {"normalized": [{"from": "Brucella_abortus_brucellosis", "to": "Brucella abortus brucellosis"}], "pages": {"-1": {"ns": 0, "title": "Brucella abortus brucellosis", "missing": ""}}}, "limits": {"extracts": 20}}
