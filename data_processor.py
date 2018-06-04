@@ -7,6 +7,7 @@ import numpy as np
 import os
 import pandas as pd
 import vsm
+import pickle
 
 path = 'Disease_Data/'
 
@@ -21,19 +22,59 @@ commonWords = 'a,able,about across after,all,almost,also,am,among,an,and,\
 			   were,what,when,where,which,while,who,whom,why,will,with,would,\
 			   yet,you,your, those, such, have, more'
 
-commonWords = commonWords.replace(',', " ").split()
 
-symptomSents = []
-words = set()
-diseaseDicts = {}
-for filename in os.listdir(path):
-	with open(path + filename, encoding='utf-8', errors='replace') as f:
-		text = f.read().replace('\\n', ' ').lower()
-		text = re.sub('[^A-Za-z.]+', ' ', text)
-		sents = text.split('.')
+diseases = []
+with open('obo.pickle', 'rb') as handle:
+    diseases = pickle.load(handle).keys()
 
-		for s in sents:
-			if re.search(r'symptom', s) != None:
-				symptomSents.append(s)
+def baseline():
+	diseaseSymptomMap = {}
+	for d in diseases:
+		disease = d.replace(" ", "_")
+		symptoms = set()
+		with open(path + disease + ".txt", encoding='utf-8', errors='replace') as f:
+			text = f.read().replace('\\n', ' ').lower()
+			text = re.sub('[^A-Za-z.]+', ' ', text)
+			sents = text.split('.')
+			for sent in sents:
+				if "symptom" in sent:
+					sent = sent.split()
+					sent = set(sent)
+					symptoms = symptoms.union(sent)
+		diseaseSymptomMap[d] = list(symptoms)
+	with open('./diseaseMaps/baseline.pickle', 'wb') as handle:
+	    pickle.dump(diseaseSymptomMap, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-print(symptomSents)
+def handbuilt():
+	symptsOfMapped = {}
+	rels = ['symptoms include (.*?)\.', 'symptoms are (.*?)\.', 'signs include (.*?)\.']
+
+	for filename in os.listdir('Disease_Data/'):
+	#print(filename)
+		diseaseName = " ".join(filename[:-4].split("_"))
+		filepath = "Disease_Data/" + filename
+		f = open(filepath, "r", errors='replace')
+		payload = f.readlines()
+
+		for rel in rels:
+			found = re.findall(rel, str(payload))
+			rawSympts = ""
+			if len(found)>0:
+				rawSympts = found[0]
+				rawSympts = re.sub(' and ', ',', rawSympts)
+			symptsForMap = []
+			for s in rawSympts.split(','):
+				s = s.strip()
+				s = re.sub('[^a-zA-Z\s]', '', s)
+				if len(s) > 1:
+					symptsForMap.append(s)
+			if len(symptsForMap)>0:
+				symptsOfMapped[diseaseName] = symptsForMap
+
+	print(symptsOfMapped)
+	with open('./diseaseMaps/handbuilt.pickle', 'wb') as handle:
+		pickle.dump(symptsOfMapped, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+#baseline()
+#handbuilt()
