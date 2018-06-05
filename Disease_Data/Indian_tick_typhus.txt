@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Indian_tick_typhus", "to": "Indian tick typhus"}], "pages": {"-1": {"ns": 0, "title": "Indian tick typhus", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "indian_tick_typhus", "to": "Indian tick typhus"}], "pages": {"-1": {"ns": 0, "title": "Indian tick typhus", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Epstein-Barr_virus_hepatitis", "to": "Epstein-Barr virus hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Epstein-Barr virus hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "epstein-barr_virus_hepatitis", "to": "Epstein-barr virus hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Epstein-barr virus hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}

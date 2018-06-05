@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Measles_virus_hepatitis", "to": "Measles virus hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Measles virus hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "measles_virus_hepatitis", "to": "Measles virus hepatitis"}], "pages": {"-1": {"ns": 0, "title": "Measles virus hepatitis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Brucella_suis_brucellosis", "to": "Brucella suis brucellosis"}], "pages": {"-1": {"ns": 0, "title": "Brucella suis brucellosis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "brucella_suis_brucellosis", "to": "Brucella suis brucellosis"}], "pages": {"-1": {"ns": 0, "title": "Brucella suis brucellosis", "missing": ""}}}, "limits": {"extracts": 20}}

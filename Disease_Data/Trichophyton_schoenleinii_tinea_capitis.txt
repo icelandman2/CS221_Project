@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Trichophyton_schoenleinii_tinea_capitis", "to": "Trichophyton schoenleinii tinea capitis"}], "pages": {"-1": {"ns": 0, "title": "Trichophyton schoenleinii tinea capitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "trichophyton_schoenleinii_tinea_capitis", "to": "Trichophyton schoenleinii tinea capitis"}], "pages": {"-1": {"ns": 0, "title": "Trichophyton schoenleinii tinea capitis", "missing": ""}}}, "limits": {"extracts": 20}}

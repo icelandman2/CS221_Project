@@ -8,11 +8,11 @@ import requests
 import pickle
 
 diseases = []
-with open('obo.pickle', 'rb') as handle:
+with open('./diseaseMaps/full.pickle', 'rb') as handle:
     diseases = pickle.load(handle).keys()
 
 def getText():
-	diseasesToCheck = ['_'.join(st.split(' ')) for st in diseases]
+	diseasesToCheck = ['_'.join(st.split(' ')).lower() for st in diseases]
 	for dis in diseasesToCheck:
 		url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&titles=" + dis + "&redirects=1"
 

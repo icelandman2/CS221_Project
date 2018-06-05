@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Cytomegalovirus_gastritis", "to": "Cytomegalovirus gastritis"}], "pages": {"-1": {"ns": 0, "title": "Cytomegalovirus gastritis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "cytomegalovirus_gastritis", "to": "Cytomegalovirus gastritis"}], "pages": {"-1": {"ns": 0, "title": "Cytomegalovirus gastritis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "West_Nile_virus_infectious_disease", "to": "West Nile virus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "West Nile virus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "west_nile_virus_infectious_disease", "to": "West nile virus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "West nile virus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

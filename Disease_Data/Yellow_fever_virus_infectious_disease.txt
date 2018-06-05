@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Yellow_fever_virus_infectious_disease", "to": "Yellow fever virus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Yellow fever virus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "yellow_fever_virus_infectious_disease", "to": "Yellow fever virus infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Yellow fever virus infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

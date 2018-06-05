@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "gastroduodenal_Crohn's_disease", "to": "Gastroduodenal Crohn's disease"}], "pages": {"-1": {"ns": 0, "title": "Gastroduodenal Crohn's disease", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "gastroduodenal_crohn's_disease", "to": "Gastroduodenal crohn's disease"}], "pages": {"-1": {"ns": 0, "title": "Gastroduodenal crohn's disease", "missing": ""}}}, "limits": {"extracts": 20}}

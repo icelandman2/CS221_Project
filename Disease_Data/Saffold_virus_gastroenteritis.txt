@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Saffold_virus_gastroenteritis", "to": "Saffold virus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Saffold virus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "saffold_virus_gastroenteritis", "to": "Saffold virus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Saffold virus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}

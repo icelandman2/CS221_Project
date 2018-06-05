@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "HIV_leukoencephalopathy", "to": "HIV leukoencephalopathy"}], "pages": {"-1": {"ns": 0, "title": "HIV leukoencephalopathy", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "hiv_leukoencephalopathy", "to": "Hiv leukoencephalopathy"}], "pages": {"-1": {"ns": 0, "title": "Hiv leukoencephalopathy", "missing": ""}}}, "limits": {"extracts": 20}}

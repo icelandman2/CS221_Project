@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Varicella-zoster_virus_encephalitis", "to": "Varicella-zoster virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Varicella-zoster virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "varicella-zoster_virus_encephalitis", "to": "Varicella-zoster virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Varicella-zoster virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

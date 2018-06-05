@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Astrakhan_spotted_fever", "to": "Astrakhan spotted fever"}], "pages": {"-1": {"ns": 0, "title": "Astrakhan spotted fever", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "astrakhan_spotted_fever", "to": "Astrakhan spotted fever"}], "pages": {"-1": {"ns": 0, "title": "Astrakhan spotted fever", "missing": ""}}}, "limits": {"extracts": 20}}

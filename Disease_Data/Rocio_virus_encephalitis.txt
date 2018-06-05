@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Rocio_virus_encephalitis", "to": "Rocio virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Rocio virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "rocio_virus_encephalitis", "to": "Rocio virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Rocio virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

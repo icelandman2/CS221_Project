@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "SARS_coronavirus_pneumonia", "to": "SARS coronavirus pneumonia"}], "pages": {"-1": {"ns": 0, "title": "SARS coronavirus pneumonia", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "sars_coronavirus_pneumonia", "to": "Sars coronavirus pneumonia"}], "pages": {"-1": {"ns": 0, "title": "Sars coronavirus pneumonia", "missing": ""}}}, "limits": {"extracts": 20}}

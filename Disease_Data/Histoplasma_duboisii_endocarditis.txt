@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Histoplasma_duboisii_endocarditis", "to": "Histoplasma duboisii endocarditis"}], "pages": {"-1": {"ns": 0, "title": "Histoplasma duboisii endocarditis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "histoplasma_duboisii_endocarditis", "to": "Histoplasma duboisii endocarditis"}], "pages": {"-1": {"ns": 0, "title": "Histoplasma duboisii endocarditis", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Colorado_tick_fever_encephalitis", "to": "Colorado tick fever encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Colorado tick fever encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "colorado_tick_fever_encephalitis", "to": "Colorado tick fever encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Colorado tick fever encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

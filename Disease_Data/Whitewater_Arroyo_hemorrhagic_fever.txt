@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Whitewater_Arroyo_hemorrhagic_fever", "to": "Whitewater Arroyo hemorrhagic fever"}], "pages": {"-1": {"ns": 0, "title": "Whitewater Arroyo hemorrhagic fever", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "whitewater_arroyo_hemorrhagic_fever", "to": "Whitewater arroyo hemorrhagic fever"}], "pages": {"-1": {"ns": 0, "title": "Whitewater arroyo hemorrhagic fever", "missing": ""}}}, "limits": {"extracts": 20}}

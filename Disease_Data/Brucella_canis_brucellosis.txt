@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Brucella_canis_brucellosis", "to": "Brucella canis brucellosis"}], "pages": {"-1": {"ns": 0, "title": "Brucella canis brucellosis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "brucella_canis_brucellosis", "to": "Brucella canis brucellosis"}], "pages": {"-1": {"ns": 0, "title": "Brucella canis brucellosis", "missing": ""}}}, "limits": {"extracts": 20}}

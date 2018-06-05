@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_esophagitis", "to": "Herpes simplex virus esophagitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus esophagitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_simplex_virus_esophagitis", "to": "Herpes simplex virus esophagitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus esophagitis", "missing": ""}}}, "limits": {"extracts": 20}}

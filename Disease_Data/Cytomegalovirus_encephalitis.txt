@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Cytomegalovirus_encephalitis", "to": "Cytomegalovirus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Cytomegalovirus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "cytomegalovirus_encephalitis", "to": "Cytomegalovirus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Cytomegalovirus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

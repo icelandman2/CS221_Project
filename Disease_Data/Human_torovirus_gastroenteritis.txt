@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Human_torovirus_gastroenteritis", "to": "Human torovirus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Human torovirus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "human_torovirus_gastroenteritis", "to": "Human torovirus gastroenteritis"}], "pages": {"-1": {"ns": 0, "title": "Human torovirus gastroenteritis", "missing": ""}}}, "limits": {"extracts": 20}}

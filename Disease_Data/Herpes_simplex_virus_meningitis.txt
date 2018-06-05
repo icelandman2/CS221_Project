@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Herpes_simplex_virus_meningitis", "to": "Herpes simplex virus meningitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus meningitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "herpes_simplex_virus_meningitis", "to": "Herpes simplex virus meningitis"}], "pages": {"-1": {"ns": 0, "title": "Herpes simplex virus meningitis", "missing": ""}}}, "limits": {"extracts": 20}}

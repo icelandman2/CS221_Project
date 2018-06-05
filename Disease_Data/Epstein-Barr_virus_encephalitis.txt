@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Epstein-Barr_virus_encephalitis", "to": "Epstein-Barr virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Epstein-Barr virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "epstein-barr_virus_encephalitis", "to": "Epstein-barr virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Epstein-barr virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

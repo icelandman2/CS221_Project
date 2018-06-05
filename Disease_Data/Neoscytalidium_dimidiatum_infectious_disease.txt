@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Neoscytalidium_dimidiatum_infectious_disease", "to": "Neoscytalidium dimidiatum infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Neoscytalidium dimidiatum infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "neoscytalidium_dimidiatum_infectious_disease", "to": "Neoscytalidium dimidiatum infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Neoscytalidium dimidiatum infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

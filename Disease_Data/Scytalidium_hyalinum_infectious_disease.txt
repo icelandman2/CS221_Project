@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Scytalidium_hyalinum_infectious_disease", "to": "Scytalidium hyalinum infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Scytalidium hyalinum infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "scytalidium_hyalinum_infectious_disease", "to": "Scytalidium hyalinum infectious disease"}], "pages": {"-1": {"ns": 0, "title": "Scytalidium hyalinum infectious disease", "missing": ""}}}, "limits": {"extracts": 20}}

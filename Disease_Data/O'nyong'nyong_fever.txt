@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "O'nyong'nyong_fever", "to": "O'nyong'nyong fever"}], "pages": {"-1": {"ns": 0, "title": "O'nyong'nyong fever", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "o'nyong'nyong_fever", "to": "O'nyong'nyong fever"}], "pages": {"-1": {"ns": 0, "title": "O'nyong'nyong fever", "missing": ""}}}, "limits": {"extracts": 20}}

@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Tahyna_virus_encephalitis", "to": "Tahyna virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Tahyna virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "tahyna_virus_encephalitis", "to": "Tahyna virus encephalitis"}], "pages": {"-1": {"ns": 0, "title": "Tahyna virus encephalitis", "missing": ""}}}, "limits": {"extracts": 20}}

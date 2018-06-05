@@ -1,1 +1,1 @@
-{"batchcomplete": "", "query": {"normalized": [{"from": "Far_Eastern_spotted_fever", "to": "Far Eastern spotted fever"}], "pages": {"-1": {"ns": 0, "title": "Far Eastern spotted fever", "missing": ""}}}, "limits": {"extracts": 20}}
+{"batchcomplete": "", "query": {"normalized": [{"from": "far_eastern_spotted_fever", "to": "Far eastern spotted fever"}], "pages": {"-1": {"ns": 0, "title": "Far eastern spotted fever", "missing": ""}}}, "limits": {"extracts": 20}}
