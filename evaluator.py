@@ -29,7 +29,6 @@ def evaluate_datasets(cmp_dataset, name="baseline"):
         recall = 0
         if numRetrieved > 0:
             for sympt in cmp_dataset[disease]:
-                #print(cmp_dataset[disease])
                 for goldS in full[disease]:
 
                     if goldS in sympt:
