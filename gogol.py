@@ -15,13 +15,6 @@ full = loadMap('full')
 baseline = loadMap('baseline')
 handbuilt = loadMap('handbuilt')
 
-for i in range(3):
-	k = random.choice(list(handbuilt.keys()))
-	print('baseline')
-	print(k, baseline[k])
-	print('handbuilt')
-	print(k, handbuilt[k])
-
 def intro():
     print(" ")
     print("Hello! My name is Dr. Gogol! I am an automated search assistant.")

@@ -14,7 +14,6 @@ def buildFullDataSet():
 	for term in terms:
 		name_search = re.findall('name: [^\n]*', term)
 		name = ""
-		#Possibly include synonyms
 		for name in name_search:
 			name = name.replace("name: ", "")
 		sympt_search = re.findall('has_symptom[^(\n|.|,)]*', term)
@@ -24,14 +23,14 @@ def buildFullDataSet():
 			s = s.replace(" and has_symptom ", "$")
 			s = s.replace(" or has_symptom ", "$").strip()
 			s = s.split("$")
-			diseaseSymptomMap[name] = s
+			diseaseSymptomMap[name.lower()] = s
 
-	with open('obo.pickle', 'wb') as handle:
+	with open('./diseaseMaps/full.pickle', 'wb') as handle:
 	    pickle.dump(diseaseSymptomMap, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 def splitData():
 	diseases = {}
-	with open('obo.pickle', 'rb') as handle:
+	with open('full.pickle', 'rb') as handle:
 		diseases = pickle.load(handle)
 
 	numTotal = len(diseases)
@@ -63,7 +62,8 @@ def splitData():
 			pickle.dump(train, handle, protocol=pickle.HIGHEST_PROTOCOL)
 		with open('val.pickle', 'wb') as handle:
 			pickle.dump(val, handle, protocol=pickle.HIGHEST_PROTOCOL)
-	
-splitData()
+
+buildFullDataSet()	
+#splitData()
     	
 

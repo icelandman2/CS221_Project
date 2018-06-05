@@ -73,7 +73,7 @@ def handbuilt():
 				if len(s) > 1:
 					symptsForMap.append(s)
 			if len(symptsForMap)>0:
-				symptsOfMapped[diseaseName] = symptsForMap
+				symptsOfMapped[diseaseName.lower()] = symptsForMap
 				sympts += symptsForMap
 	sympts = set(sympts)
 	with open('./diseaseMaps/handbuilt.pickle', 'wb') as handle:
@@ -216,8 +216,8 @@ def test():
 		print(' '.join(sentence))
 
 
-#baseline()
-#handbuilt()
-#makeSeeds()
-bootstrap()
+baseline()
+handbuilt()
+makeSeeds()
+#bootstrap()
 #test()
