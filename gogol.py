@@ -137,5 +137,7 @@ while(True):
     info_from_prediction(baseline_predict(sympt, handbuilt))
     print("Here's the experimental hand-built predictor, with log-likelihood:")
     info_from_prediction(baseline_predict(sympt, handbuilt, use_handmade_incidence=True))
+    print("Here is the baseline prediction using the full dataset:")
+    info_from_prediction(baseline_predict(sympt, full))
     if wantToQuit():
         break

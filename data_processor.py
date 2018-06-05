@@ -5,12 +5,9 @@ import pprint
 import collections
 import numpy as np
 import os
-import pandas as pd
 import vsm
 import pickle
 import nltk
-from nltk.parse.generate import generate, demo_grammar
-from nltk import CFG, Production, Nonterminal
 
 path = './Disease_Data/'
 
@@ -49,7 +46,6 @@ def baseline():
 	    pickle.dump(diseaseSymptomMap, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 def handbuilt():
-	sympts = []
 	symptsOfMapped = {}
 	rels = ['symptoms include (.*?)\.', 'symptoms are (.*?)\.', 'signs include (.*?)\.']
 
@@ -74,8 +70,6 @@ def handbuilt():
 					symptsForMap.append(s)
 			if len(symptsForMap)>0:
 				symptsOfMapped[diseaseName.lower()] = symptsForMap
-				sympts += symptsForMap
-	sympts = set(sympts)
 	with open('./diseaseMaps/handbuilt.pickle', 'wb') as handle:
 		pickle.dump(symptsOfMapped, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -105,7 +99,6 @@ def makeSeeds():
 					symptsForMap.append(s)
 				sympts += symptsForMap
 	sympts = set(sympts)
-	print(sympts)
 	with open('./diseaseMaps/seeds.txt', 'w') as handle:
 		for s in sympts:
 			handle.write(s + "\n")
@@ -117,8 +110,8 @@ def loadPayloads(name):
 		train = pickle.load(handle)
 
 	for d in train.keys():
-		d = d.replace(' ', '_')
-		f = open(path + d + '.txt', "r", errors='replace')
+		filename = d.replace(' ', '_')
+		f = open(path + filename + '.txt', "r", errors='replace')
 		payload = f.read()
 		payload = re.sub(' and ', ',', payload)
 		payload = re.sub(' or ', ',', payload)
@@ -126,6 +119,39 @@ def loadPayloads(name):
 		payload = re.sub('[^a-zA-Z.]', ' ', payload)
 		payloads[d] = payload
 	return payloads
+
+def bootstrapMatch():
+	sympts = []
+	symptsOfMapped = {}
+	rels = []
+	with open('./diseaseMaps/bootstrapRels.txt', 'r') as handle:
+		rels = handle.read().split('\n')
+	print(rels)
+	return
+	payloads = loadPayloads('./diseaseMaps/train')
+	keys = [k for k in payloads.keys()]
+
+	for k in keys:
+		payload = payloads[k]
+		for rel in rels:
+			found = re.search(rel, payload)
+			if found == None: continue
+			phrase = found.group()
+			excessWords = rel.split('(.){0,20}')
+			for excess in excessWords:
+				phrase = phrase.replace(excess, ',')
+			symptsForMap = []
+			for s in phrase.split(','):
+				s = s.strip()
+				s = re.sub('[^a-zA-Z\s]', '', s)
+				if len(s) > 1:
+					symptsForMap.append(s)
+			if len(symptsForMap)>0:
+				symptsOfMapped[k.lower()] = symptsForMap
+	print(symptsOfMapped)
+	with open('./diseaseMaps/bootstrap.pickle', 'wb') as handle:
+		pickle.dump(symptsOfMapped, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
 
 def bootstrap():
 	sympts = []
@@ -141,7 +167,7 @@ def bootstrap():
 	train = {}
 	with open('./diseaseMaps/train.pickle', 'rb') as handle:
 		train = pickle.load(handle)
-	keys = [k.replace(' ', '_') for k in train.keys()]
+	keys = [k for k in train.keys()]
 
 	symptPatterns = set()
 	for d in keys:
@@ -153,19 +179,15 @@ def bootstrap():
 			sent = sent.lower()
 			for symp in sympts:
 				if symp in sent:
-					#sent = sent.replace(symp, ' '+ "('SYMP')"+' ')
-					sent = sent.replace(symp, " (.){0,10} ")
+					sent = sent.replace(symp, " (.){0,20} ")
 					inSent = True
 			sent = sent.split()
 			if inSent:
 				for i in range(len(sent)-1):
-					#if sent[i] == "'SYMP'":
-					if sent[i] == "(.){0,10}":
-						#toAdd = "'"+" ".join(sent[max(i-3,0):min(i+3, len(sent))])+"'"
+					if sent[i] == "(.){0,20}":
 						toAdd = " ".join(sent[max(i-3,0):min(i+3, len(sent))])
 						symptPatterns.add(toAdd)
 
-	#grammar_sympts = "|".join(grammar_sympts)
 	patternScores = collections.defaultdict(int)
 	count = 0
 	total = len(symptPatterns)
@@ -179,51 +201,19 @@ def bootstrap():
 			found = re.search(pattern, str(payload))
 			if found != None:
 				patternScores[pattern] += 1
-				print(found.group())
-	print(patternScores)
-	'''
-	for pattern in symptPatterns:
-		phrases = []
-		pattern = pattern.replace("''", "'")
-		words = pattern.split()
-		words[0] = words[0].replace("'SYMP", "SYMP")
-		words[-1] = words[-1].replace("SYMP'", "SYMP")
-		pattern = " ".join(words)
-		'''
-	'''
-		g = CFG.fromstring("""
-	 		S -> """ + pattern + """
-	 		SYMP -> """ + grammar_sympts)
-		for sentence in generate(g, n=100000):
-		     phrases.append(''.join(sentence))
-		for p in phrases:
-			for d in keys:
-				payload = payloads[d]
-				if p in payload:
-					patternScores[pattern] += 1
-	print(patternScores)
-	'''
+			#print(found)
+	for pattern in patternScores.keys():
+		if patternScores[pattern] > 0:
+			rels.append(pattern)
+	with open('./diseaseMaps/bootstrapRels.txt', 'w') as handle:
+		for s in rels:
+			handle.write(s + "\n")
 
-def test():
-	patterns = "'extract trench 'SYMP' 'SYMP' also'|'confused 'SYMP' also'"
-	grammar_sympts = "'hello'|'goodbye'"
-	'''
-	g = CFG.fromstring("""
-	 S -> """ + patterns + """
-	 SYMP -> """ + grammar_sympts +"""
-	 """)
-	'''
-	g = CFG.fromstring("""
-	 S -> """ + patterns + """
-	 SYMP -> """+grammar_sympts+"""
-	 """)
-	print (g)
-	for sentence in generate(g, n=10):
-		print(' '.join(sentence))
+	
 
 
 #baseline()
 #handbuilt()
 #makeSeeds()
-bootstrap()
-#test()
+#bootstrap()
+bootstrapMatch()

@@ -13,6 +13,7 @@ def loadMap(file):
 full = loadMap('full')
 baseline = loadMap('baseline')
 handbuilt = loadMap('handbuilt')
+bootstrap = loadMap('bootstrap')
 
 def evaluate_datasets(cmp_dataset, name="baseline"):
     print("Evaluation results for gold parses compared to dataset " + name)
@@ -58,3 +59,4 @@ def evaluate_datasets(cmp_dataset, name="baseline"):
 
 evaluate_datasets(baseline)
 evaluate_datasets(handbuilt, name="handbuilt")
+evaluate_datasets(bootstrap, name="bootstrap")
