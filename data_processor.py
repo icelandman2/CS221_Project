@@ -131,7 +131,7 @@ def bootstrap():
 	sympts = []
 	rels = []
 	grammar_sympts = []
-	payloads = loadPayloads('train')
+	payloads = loadPayloads('./diseaseMaps/train')
 
 	with open('./diseaseMaps/seeds.txt', 'r') as f:
 		sympts = f.readlines()
@@ -139,7 +139,7 @@ def bootstrap():
 		grammar_sympts = ["'"+s.strip()+"'" for s in sympts]
 
 	train = {}
-	with open('train.pickle', 'rb') as handle:
+	with open('./diseaseMaps/train.pickle', 'rb') as handle:
 		train = pickle.load(handle)
 	keys = [k.replace(' ', '_') for k in train.keys()]
 
@@ -154,26 +154,32 @@ def bootstrap():
 			for symp in sympts:
 				if symp in sent:
 					#sent = sent.replace(symp, ' '+ "('SYMP')"+' ')
-					sent = sent.replace(symp, ' '+ " (.*) "+' ')
+					sent = sent.replace(symp, " (.){0,10} ")
 					inSent = True
 			sent = sent.split()
 			if inSent:
 				for i in range(len(sent)-1):
 					#if sent[i] == "'SYMP'":
-					if sent[i] == "(.*)":
+					if sent[i] == "(.){0,10}":
 						#toAdd = "'"+" ".join(sent[max(i-3,0):min(i+3, len(sent))])+"'"
 						toAdd = " ".join(sent[max(i-3,0):min(i+3, len(sent))])
 						symptPatterns.add(toAdd)
 
 	#grammar_sympts = "|".join(grammar_sympts)
 	patternScores = collections.defaultdict(int)
+	count = 0
+	total = len(symptPatterns)
 	for pattern in symptPatterns:
+		print("Pattern: " + str(count) + "/" + str(total))
+		count += 1
+		key_count = 0
 		for d in keys:
 			if patternScores[pattern] > 3: break
 			payload = payloads[d]
 			found = re.search(pattern, str(payload))
 			if found != None:
 				patternScores[pattern] += 1
+				print(found.group())
 	print(patternScores)
 	'''
 	for pattern in symptPatterns:
@@ -216,8 +222,8 @@ def test():
 		print(' '.join(sentence))
 
 
-baseline()
-handbuilt()
-makeSeeds()
-#bootstrap()
+#baseline()
+#handbuilt()
+#makeSeeds()
+bootstrap()
 #test()
