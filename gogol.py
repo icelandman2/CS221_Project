@@ -5,6 +5,7 @@ import urllib.request
 import os
 import difflib
 import pickle
+import random
 
 def loadMap(file):
 	with open('./diseaseMaps/' + file + '.pickle', 'rb') as handle:
@@ -13,6 +14,13 @@ def loadMap(file):
 full = loadMap('full')
 baseline = loadMap('baseline')
 handbuilt = loadMap('handbuilt')
+
+for i in range(3):
+	k = random.choice(list(handbuilt.keys()))
+	print('baseline')
+	print(k, baseline[k])
+	print('handbuilt')
+	print(k, handbuilt[k])
 
 def intro():
     print(" ")
@@ -38,7 +46,7 @@ def wantToQuit():
     print(" ")
     return True
 
-def hand_built(user_input):
+def fuzzy_predict(user_input):
     disCounts = collections.defaultdict(int)
     for disease in symptsOfMapped:
         listOfSymptoms = symptsOfMapped[disease]
@@ -68,7 +76,7 @@ def hand_built(user_input):
 
     return prediction
 
-def baselinePredict(user_input, diseaseMap):
+def baseline_predict(user_input, diseaseMap):
     disCounts = collections.defaultdict(int)
     for disease in diseaseMap:
         listOfSymptoms = diseaseMap[disease]
@@ -111,8 +119,8 @@ while(True):
     sympt = sympt.split(',')
     sympt = [x.strip(' ') for x in sympt]
     print("Here is the baseline prediction:")
-    info_from_prediction(baselinePredict(sympt, baseline))
+    info_from_prediction(baseline_predict(sympt, baseline))
     print("Here is the hand-built prediction, without TF-IDF:")
-    info_from_prediction(baselinePredict(sympt, handbuilt))
+    info_from_prediction(baseline_predict(sympt, handbuilt))
     if wantToQuit():
         break
